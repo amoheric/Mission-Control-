@@ -1,0 +1,127 @@
+<!--
+    ERIC AMOH ADJEI
+    We Have SOUND! Assigment.HTML
+    6/4/22
+-->
+
+<!DOCTYPE html> <!--always indicate document type to avoid errors-->
+<html lang="en"> <!--declaring the languge or country this HTML doc is written -->
+<head>
+    
+    <style>
+
+    h1 
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large; 
+    text-align: center; 
+}
+
+body
+{
+    background-image: url("sound.jpg"); background-repeat: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    image-rendering:auto;
+    text-align: center;  
+}   
+
+p
+{
+    color: rgb(255, 255, 255);
+    text-decoration: wavy;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+</style>
+
+    <title>UAT Space Program - We Have SOUND!</title>
+
+</head>
+
+    <h1 style="background-color: rgb(0, 255, 64);"> UAT Space Program - We Have SOUND!</h1> <!--style added to change H1 backgroung only-->
+    
+    <img src="UATspaceLogo.jpg" alt="UATspaceLogo"></br> <!--adding image-->
+    
+    <audio src="fleetwood_mac_everywhere.mp3" id="myAudio"></audio><!---->
+    
+    <button onClick="playMyAudio()">start Audio</button><!---->
+    
+    <button onClick="pauseMyAudio()">stop Audio</button>
+
+    <p id="audioStatus">Click The Play Button</p>
+
+    <script>
+
+      function playMyAudio()
+      {
+        document.getElementById("myAudio").play();
+       document.getElementById("audioStatus").innerHTML="Audio is Playing";	 
+       
+      }
+
+      function pauseMyAudio()
+      {
+        document.getElementById("myAudio").pause();
+       document.getElementById("audioStatus").innerHTML="Audio Paused";	
+      }
+
+    </script>
+
+    <script>
+
+     function playMyAudio()
+     {
+       document.getElementById("myAudio").play();
+     }
+    
+    </script>
+
+
+    <script>
+        //Adding an alert of any kind of my choice
+        alert("Smile, UAT Space Program - We Have SOUND!") // getting used to the comments
+
+        document.write("<p>Testing the document write functions</p><p>This time with paragraph</p>") //testing document.write with paragraph here
+
+    </script>
+
+
+    <P>Implementing a loop to display the current time repeatedly</P> <!--A paragraph of comment for UI-->
+
+
+    <h2 style= "color:rgba(255, 0, 200, 0.774) ;"> Implementing Loops</h2> <!--style added to change H2 backgroung only-->
+    
+    
+    <P> In my last Mission Control assignment (Mission Control, We Have Blastoff!), I copied and pasted a code 10 times <a href="https://synchronic.uat.edu/">click to view</a></P>
+    <!--this is to show we can always add an external source to a webpage-->
+
+    <p>
+        <a href="https://synchronic.uat.edu/courses/5052">
+            <button>Click Me</button> <!--this button, not function now but can add a fucntin to any external or action i want-->
+    </p>
+
+
+    <h3 style="color:rgb(255, 60, 0) ;">Countdown from 10 to 0 </h3><!--style added to change H3 heading text only-->
+
+
+
+    <script>
+
+
+    document.write("<p>Efficiency Improvements for Mission Control</p><p>Check out! We have only ten seconds to begin, why not count to 10...</p>");
+        // this is just a comment
+        
+        for(let countdown = 0; countdown < 10; countdown++) // usinf the for loop function, which all variables are set with the for parenthesis
+        {
+            document.write("countdown in.." + countdown); //this is thr return command of the loop countdown
+            document.write("<br></br>"); // just a line break to make reading code easy
+        }
+        
+            document.write("Mission Control, We Have Blastoff!!!"); // Executing what i need as the end messeage after my countdown is done
+            
+    </script> <!--declaring external JS doc. saved in the same folder but is a seperate file-->
+
+    
+</body>
+</html>
