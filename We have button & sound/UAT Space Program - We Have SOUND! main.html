@@ -6,7 +6,7 @@
 
 <!DOCTYPE html> <!--always indicate document type to avoid errors-->
 <html lang="en"> <!--declaring the languge or country this HTML doc is written -->
-<head>
+<head><!--adding inline CSS-->
     
     <style>
 
@@ -19,7 +19,7 @@
 
 body
 {
-    background-image: url("sound.jpg"); background-repeat: fixed;
+    background-image: url("sound.jpg"); background-repeat: round;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
     image-rendering:auto;
@@ -35,35 +35,41 @@ p
 }
 </style>
 
-    <title>UAT Space Program - We Have SOUND!</title>
+    <title>UAT Space Program - We Have SOUND!</title><!--DOCUMENT TITLE-->
 
 </head>
 
     <h1 style="background-color: rgb(0, 255, 64);"> UAT Space Program - We Have SOUND!</h1> <!--style added to change H1 backgroung only-->
     
+    
     <img src="UATspaceLogo.jpg" alt="UATspaceLogo"></br> <!--adding image-->
     
-    <audio src="fleetwood_mac_everywhere.mp3" id="myAudio"></audio><!---->
     
-    <button onClick="playMyAudio()">start Audio</button><!---->
+    <audio src="fleetwood_mac_everywhere.mp3" id="myAudio"></audio><!--Added audio-->
     
-    <button onClick="pauseMyAudio()">stop Audio</button>
+    
+    <button onClick="playMyAudio()">start Audio</button><!--this is the play button-->
+    
+    
+    <button onClick="pauseMyAudio()">stop Audio</button><!--the stop button-->
 
-    <p id="audioStatus">Click The Play Button</p>
+    
+    <p id="audioStatus">Click The Play Button</p><!--this will tell the status of my sound-->
 
     <script>
+        // inline javascript function
 
       function playMyAudio()
       {
-        document.getElementById("myAudio").play();
-       document.getElementById("audioStatus").innerHTML="Audio is Playing";	 
+        document.getElementById("myAudio").play();//this function as the play button
+       document.getElementById("audioStatus").innerHTML="Audio is Playing";	 //this will tell the status of my sound
        
       }
 
-      function pauseMyAudio()
+      function pauseMyAudio()//this function as the stop button
       {
         document.getElementById("myAudio").pause();
-       document.getElementById("audioStatus").innerHTML="Audio Paused";	
+       document.getElementById("audioStatus").innerHTML="Audio Paused"; //this will tell the status of my sound	
       }
 
     </script>
@@ -72,7 +78,7 @@ p
 
      function playMyAudio()
      {
-       document.getElementById("myAudio").play();
+       document.getElementById("myAudio").play();// we expect our return with this code
      }
     
     </script>
@@ -82,7 +88,7 @@ p
         //Adding an alert of any kind of my choice
         alert("Smile, UAT Space Program - We Have SOUND!") // getting used to the comments
 
-        document.write("<p>Testing the document write functions</p><p>This time with paragraph</p>") //testing document.write with paragraph here
+        document.write("<p>Putin warns West:</p><p> Russia will strike harder if longer-range</p>") //testing document.write with paragraph here
 
     </script>
 
@@ -91,18 +97,18 @@ p
 
 
     <h2 style= "color:rgba(255, 0, 200, 0.774) ;"> Implementing Loops</h2> <!--style added to change H2 backgroung only-->
-    
+
     
     <P> In my last Mission Control assignment (Mission Control, We Have Blastoff!), I copied and pasted a code 10 times <a href="https://synchronic.uat.edu/">click to view</a></P>
     <!--this is to show we can always add an external source to a webpage-->
 
     <p>
-        <a href="https://synchronic.uat.edu/courses/5052">
-            <button>Click Me</button> <!--this button, not function now but can add a fucntin to any external or action i want-->
+
+        <a href="https://synchronic.uat.edu/courses/5052"> <button>Click Me</button> <!--this button, not function now but can add a fucntin to any external or action i want-->
     </p>
 
 
-    <h3 style="color:rgb(255, 60, 0) ;">Countdown from 10 to 0 </h3><!--style added to change H3 heading text only-->
+    <h3 style="color:rgb(255, 60, 0) ;">Countdown from 0 to 9 </h3><!--style added to change H3 heading text only-->
 
 
 
@@ -120,7 +126,11 @@ p
         
             document.write("Mission Control, We Have Blastoff!!!"); // Executing what i need as the end messeage after my countdown is done
             
-    </script> <!--declaring external JS doc. saved in the same folder but is a seperate file-->
+    </script>
+    
+    <br><br/>
+
+    <footer style="background-color: rgba(238, 234, 11, 0.582); border: inset; border-radius: 50px; border-color: rgb(0, 110, 255);">I STAND WITH UKRAINE</footer><!--setting up footer with border-->
 
     
 </body>
