@@ -1,0 +1,274 @@
+<!--
+    ERIC AMOH ADJEI
+    END OF MID-TERM! Assigment.HTML
+    6/11/22
+-->
+
+<!DOCTYPE html> <!--always indicate document type to avoid errors-->
+<html lang="en"> <!--declaring the languge or country this HTML doc is written -->
+<head>
+  
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="A Web Presence.css"><!--adding external CSS-->
+    
+    <style> /*adding internal CSS*/
+        body
+        {
+            color: rgb(255, 250, 250);background-image: url("cosmos.jpg");
+        }
+    </style>
+</head>
+
+<body>
+
+     <nav id="team"> <!--adding nav. to my to most page with id from external .css file-->
+    <a href="index.html">Home</a> |
+    <a href="Space Souds!.html">Space Sounds</a> |
+    <a href="UAT Space Program.html">UAT Space Program</a> |
+    <a href="Boards Objectives page.html">Boards Objective</a> |
+    <a href="Services.html">Services</a> |
+    <a href="https://amoheric.com">Blog</a> 
+ </nav>
+
+    <main> <!--the ain funtion of web content-->
+        <h1>Hello! And Welcome To Our News Service Room</h1>
+
+        <p>Talk to us, Learn an easy step by step way to code with UAT Space Program, so you can make money on the internet.</p>
+        <p>Breaking News After This Short Music</p>
+
+        <p><img src="meeting.png" alt="meeting"></p>
+        <audio src="fleetwood_mac_everywhere.mp3" id="myAudio"></audio> <!--Added audio-->
+
+<p id="audioStatus">Click The Start Button</p> <!--this will tell the status of my sound-->    
+    
+<button onClick="playMyAudio()">start Audio</button> <!--this is the play button-->
+
+<button onClick="pauseMyAudio()">stop Audio</button> <!--the stop button-->
+
+<script>
+    // inline javascript function
+
+  function playMyAudio()
+  {
+    document.getElementById("myAudio").play(); //this function as the play button
+   document.getElementById("audioStatus").innerHTML="Audio is Playing";	 //this will tell the status of my sound
+  }
+
+  function pauseMyAudio() //this function as the stop button
+  {
+    document.getElementById("myAudio").pause();
+   document.getElementById("audioStatus").innerHTML="Audio Paused"; //this will tell the status of my sound	
+  }
+
+</script>
+
+<script>
+ function playMyAudio()
+ {
+   document.getElementById("myAudio").play(); // we expect our return with this code
+ }
+</script>
+
+        <article>
+          <h2>Breaking News!<br>Putin warns West</h2>
+
+          <h3 style="color:rgb(204, 138, 16) ;">Russia will strike harder if longer-range by Countdown from 0 to 10 </h3> <!--style added to change H3 heading text only-->
+
+          <script src="count up.js"></script>
+          
+          <br><br/>
+      
+         
+         <script>
+              //Adding an alert of any kind of my choice
+              alert("Smile, UAT Space News - We Have SOUND!") // getting used to the comments
+      
+          </script>
+
+          <h4>Javascript DOM and Document Structure with Tables, Themes, and Mock Data</h4>
+
+          <p>
+<table>
+<caption>Document Structure</caption> <!--this is used as table caption or topic head-->
+    <tr> <!--table row-->
+      <th>Data Type</th> <!--table head-->
+      <th>Readings</th>
+    </tr>
+  
+    <tr>
+      <td>Time elapsed:</td> <!--table data-->
+      <td id="Time elapsed">0</td>
+    </tr>
+
+    <tr>
+      <td>Latitude:</td>
+      <td id="Latitude">0</td> 
+    </tr>
+  
+    <tr>
+      <td>Longtitude:</td>
+      <td id="Longtitude">0</td>
+    </tr>
+  
+    <tr>
+      <td>GPS Altitude:</td>
+      <td id="GPS Altitude">0</td>
+    </tr>
+  
+    <tr>
+      <td>BMP Sensor Altitude:</td>
+      <td id="BMP Sensor Altitude">0</td>
+    </tr>
+  
+    <tr>
+      <td>BMP Sensor Pressure:</td>
+      <td id="BMP Sensor Pressure">0</td>
+    </tr>
+  
+    <tr>
+      <td >BMP Sensor Temperature:</td>
+      <td id="BMP Sensor Temperature">0</td>
+    </tr>
+  
+    <tr>
+      <td>Digital Sensor Temperature:</td>
+      <td id="Digital Sensor Temperature" >0</td>
+    </tr>
+  
+    <tr>
+      <td>CSS Sensor Temperature:</td>
+      <td id="CSS Sensor Temperature">0</td>
+    </tr>
+  
+    <tr>
+      <td>CSS Sensor eco2:</td>
+      <td id="CSS Sensor eco2">0</td>
+    </tr>
+  
+    <tr>
+      <td>CSS Sensor TVOC:</td>
+      <td id="CSS Sensor TVOC">0</td>
+    </tr>
+  
+    <tr>
+      <td>UV:</td>
+      <td id="UV">0</td>
+    </tr>
+  
+      <tr>
+          <td>Accel X:</td>
+          <td id="Accel X">0</td>
+        </tr>
+  
+        <tr>
+          <td>Accel Y:</td>
+          <td id="Accel Y">0</td>
+        </tr>
+  
+        <tr>
+          <td>Accel Z:</td>
+          <td id="Accel Z">0</td>
+        </tr>
+  
+        <tr>
+          <td>Magnetic x:</td>
+          <td id="Magnetic x">0</td>
+        </tr>
+  
+        <tr>
+          <td>Magnetic Y:</td>
+          <td id="Magnetic Y">0</td>
+        </tr>
+  
+        <tr>
+          <td>Magnetic Z:</td>
+          <td id="Magnetic Z">0</td>
+        </tr>
+  
+        <tr>
+          <td>Gyro x:</td>
+          <td id="Gyro x">0</td>
+        </tr>
+  
+        <tr>
+          <td>Gyro Z:</td>
+          <td id="Gyro Z">0</td>
+        </tr>
+  
+        <tr>
+          <td>Gyro Y:</td>
+          <td id="Gyro Y">0</td>
+        </tr>
+  
+        <tr>
+          <td>Atlanta real-time</td>
+          <td id="Atlanta real-time">0</td>
+        </tr>
+
+        <script> //invoking funtions
+        var tableArray = [470, 0, 0, 0, 30383.04, 2.34, 0, 25.87, 24.35, 400, 0, 0, -0.83, -0.03, 9.69, 0.07, 0.55, -0.31, 4.56, 0.42, -0.62, -3.00+" EST"];
+  
+        function loadData()  //invoking load Data funtions return with strings
+        {
+          document.getElementById("Time elapsed").innerHTML = tableArray[0] + " minutes" ;
+          document.getElementById("Longtitude").innerHTML = tableArray[1] + " Longtitude " ;
+          document.getElementById("Latitude").innerHTML = tableArray[2] + " Lad." ;
+          document.getElementById("GPS Altitude").innerHTML = tableArray[3] + " GPS" ;
+          document.getElementById("BMP Sensor Altitude").innerHTML = tableArray[4] + "  Altitude" ;
+          document.getElementById("BMP Sensor Pressure").innerHTML = tableArray[5] + "  Pressure" ;
+          document.getElementById("BMP Sensor Temperature").innerHTML = tableArray[6] + " F" ;
+          document.getElementById("Digital Sensor Temperature").innerHTML = tableArray[7] + " C" ;
+          document.getElementById("CSS Sensor Temperature").innerHTML = tableArray[8] + " Temperature" ;
+          document.getElementById("CSS Sensor eco2").innerHTML = tableArray[9] + " eco2" ;
+          document.getElementById("CSS Sensor TVOC").innerHTML = tableArray[10] + " TVOC" ;
+          document.getElementById("UV").innerHTML = tableArray[11] + " UV" ;
+          document.getElementById("Accel X").innerHTML = tableArray[12] + " X" ;
+          document.getElementById("Accel Y").innerHTML = tableArray[13] + " Y" ;
+          document.getElementById("Accel Z").innerHTML = tableArray[14] + " Z" ;
+          document.getElementById("Magnetic x").innerHTML = tableArray[15] + " " ;
+          document.getElementById("Magnetic Y").innerHTML = tableArray[16] + " " ;
+          document.getElementById("Magnetic Z").innerHTML = tableArray[17] + " " ;
+          document.getElementById("Gyro x").innerHTML = tableArray[18] + " " ;
+          document.getElementById("Gyro Z").innerHTML = tableArray[19] + " " ;
+          document.getElementById("Gyro Y").innerHTML = tableArray[20] + " " ;
+          document.getElementById("Atlanta real-time").innerHTML = tableArray[21] + " " ;
+        }
+  
+        function resetData() //invoking Data reset funtions return with strings
+        {
+          document.getElementById("Time elapsed").innerHTML =  " " ;
+          document.getElementById("Latitude").innerHTML = " " ;
+          document.getElementById("Longtitude").innerHTML = " " ;
+          document.getElementById("GPS Altitude").innerHTML = " " ;
+          document.getElementById("BMP Sensor Altitude").innerHTML = " " ;
+          document.getElementById("BMP Sensor Pressure").innerHTML = " " ;
+          document.getElementById("BMP Sensor Temperature").innerHTML = " " ;
+          document.getElementById("Digital Sensor Temperature").innerHTML = " " ;
+          document.getElementById("CSS Sensor Temperature").innerHTML = " " ;
+          document.getElementById("CSS Sensor eco2").innerHTML = " " ;
+          document.getElementById("CSS Sensor TVOC").innerHTML = " " ;
+          document.getElementById("UV").innerHTML = " " ;
+          document.getElementById("Accel X").innerHTML = " " ;
+          document.getElementById("Accel Y").innerHTML = " " ;
+          document.getElementById("Accel Z").innerHTML = " " ;
+          document.getElementById("Magnetic x").innerHTML = " " ;
+          document.getElementById("Magnetic Y").innerHTML = " " ;
+          document.getElementById("Magnetic Z").innerHTML = " " ;
+          document.getElementById("Gyro x").innerHTML = " " ;
+          document.getElementById("Gyro Z").innerHTML = " " ;
+          document.getElementById("Gyro Y").innerHTML = " " ;
+          document.getElementById("Atlanta real-time").innerHTML = " " ;
+        }
+        </script> 
+    </tr>
+  </table>
+  
+  <p>
+  <input type="button" value="Start" onclick="loadData();"> <!--adding a start button to populate data-->
+  <input type="button" value="Reset" onclick="resetData()"> <!--adding a reset button for the populate data-->
+  </p></p>
+
+          <footer style="background-color: rgba(238, 234, 11, 0.582); border: inset; border-radius: 50px; border-color: rgb(0, 110, 255);">
+              I STAND WITH UKRAINE</footer> <!--setting up footer with border-->
+</body>
+</html>

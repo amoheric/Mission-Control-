@@ -1,0 +1,280 @@
+<!--
+    ERIC AMOH ADJEI
+    END OF MID-TERM! Assigment.HTML
+    6/11/22
+-->
+
+<!DOCTYPE html> <!--always indicate document type to avoid errors-->
+<html lang="en"> <!--declaring the languge or country this HTML doc is written -->
+<head><!--adding inline CSS-->
+<style>
+
+h1,h2
+{
+   font-family: 'Times New Roman', Times, serif; font-size: xx-large; text-align: center;
+}
+
+a {color:#ffffff; text-decoration: none;}
+
+body
+{
+  background-color: rgba(4, 157, 245, 0.589); background-repeat: round;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: larger;
+  image-rendering: auto; text-align: center;  
+}
+
+p
+{
+color: rgb(255, 255, 255); text-decoration: wavy; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: larger; font-style: normal; 
+}
+
+/* adding stlye and even background to my table*/
+table {
+  border-radius: 10px;
+  font-family: arial, sans-serif;
+  width: 100%; align-self: auto;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 6px;
+}
+
+/*nth-chid adds a zigzag background to my table*/
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+</style>
+</head>
+
+<body>
+  <nav id="team2"><!--adding nav. to my to most page with id from external .css file-->
+    <a href="index.html">Home</a> |
+    <a href="Space Souds!.html">Space Sounds</a> |
+    <a href="UAT Space Program.html">UAT Space Program</a> |
+    <a href="Boards Objectives page.html">Boards Objective</a> |
+    <a href="Services.html">Services</a> |
+    <a href="https://amoheric.com">Blog</a> 
+ </nav>
+
+  <img src="UATspaceLogo1.png" alt="UATspaceLogo1"><!--adding image-->
+  <h1>UAT SPACE PROGRAM</h1>
+  
+  
+
+<table><!--table and data structure-->
+
+  <tr><!--table row-->
+
+    <th>Data Type</th> <!--table head-->
+    <th>Readings</th>
+
+  </tr>
+
+  <tr>
+
+    <td>Time elapsed:</td> <!--table data-->
+    <td id="Time elapsed">0</td>
+
+  </tr>
+
+  <tr>
+
+    <td>Latitude:</td>
+    <td id="Latitude">0</td>
+
+  </tr>
+
+  <tr>
+
+    <td>Longtitude:</td>
+    <td id="Longtitude">0</td>
+
+  </tr>
+
+  <tr>
+
+    <td>GPS Altitude:</td>
+    <td id="GPS Altitude">0</td>
+
+  </tr>
+
+  <tr>
+
+    <td>BMP Sensor Altitude:</td>
+    <td id="BMP Sensor Altitude">0</td>
+
+  </tr>
+
+  <tr>
+
+    <td>BMP Sensor Pressure:</td>
+    <td id="BMP Sensor Pressure">0</td>
+
+  </tr>
+
+  <tr>
+
+    <td >BMP Sensor Temperature:</td>
+    <td id="BMP Sensor Temperature">0</td>
+
+  </tr>
+
+  <tr>
+    <td>Digital Sensor Temperature:</td>
+    <td id="Digital Sensor Temperature" >0</td>
+  </tr>
+
+  <tr>
+    <td>CSS Sensor Temperature:</td>
+    <td id="CSS Sensor Temperature">0</td>
+  </tr>
+
+  <tr>
+    <td>CSS Sensor eco2:</td>
+    <td id="CSS Sensor eco2">0</td>
+  </tr>
+
+  <tr>
+    <td>CSS Sensor TVOC:</td>
+    <td id="CSS Sensor TVOC">0</td>
+  </tr>
+
+  <tr>
+    <td>UV:</td>
+    <td id="UV">0</td>
+  </tr>
+
+    <tr>
+        <td>Accel X:</td>
+        <td id="Accel X">0</td>
+      </tr>
+
+      <tr>
+        <td>Accel Y:</td>
+        <td id="Accel Y">0</td>
+      </tr>
+
+      <tr>
+        <td>Accel Z:</td>
+        <td id="Accel Z">0</td>
+      </tr>
+
+      <tr>
+        <td>Magnetic x:</td>
+        <td id="Magnetic x">0</td>
+      </tr>
+
+      <tr>
+        <td>Magnetic Y:</td>
+        <td id="Magnetic Y">0</td>
+      </tr>
+
+      <tr>
+        <td>Magnetic Z:</td>
+        <td id="Magnetic Z">0</td>
+      </tr>
+
+      <tr>
+        <td>Gyro x:</td>
+        <td id="Gyro x">0</td>
+      </tr>
+
+      <tr>
+        <td>Gyro Z:</td>
+        <td id="Gyro Z">0</td>
+      </tr>
+
+      <tr>
+        <td>Gyro Y:</td>
+        <td id="Gyro Y">0</td>
+      </tr>
+
+      <tr>
+        <td>Atlanta real-time</td>
+        <td id="Atlanta real-time">0</td>
+      </tr>
+
+      <script> //invoking funtions
+      var tableArray = [470, 0, 0, 0, 30383.04, 2.34, 0, 25.87, 24.35, 400, 0, 0, -0.83, -0.03, 9.69, 0.07, 0.55, -0.31, 4.56, 0.42, -0.62, -3.00+" EST"];
+
+      function loadData() //invoking load Data funtions return with strings
+      {
+        document.getElementById("Time elapsed").innerHTML = tableArray[0] + " minutes" ;
+        document.getElementById("Longtitude").innerHTML = tableArray[1] + " Longtitude " ;
+        document.getElementById("Latitude").innerHTML = tableArray[2] + " Lad." ;
+        document.getElementById("GPS Altitude").innerHTML = tableArray[3] + " GPS" ;
+        document.getElementById("BMP Sensor Altitude").innerHTML = tableArray[4] + "  Altitude" ;
+        document.getElementById("BMP Sensor Pressure").innerHTML = tableArray[5] + "  Pressure" ;
+        document.getElementById("BMP Sensor Temperature").innerHTML = tableArray[6] + " F" ;
+        document.getElementById("Digital Sensor Temperature").innerHTML = tableArray[7] + " C" ;
+        document.getElementById("CSS Sensor Temperature").innerHTML = tableArray[8] + " Temperature" ;
+        document.getElementById("CSS Sensor eco2").innerHTML = tableArray[9] + " eco2" ;
+        document.getElementById("CSS Sensor TVOC").innerHTML = tableArray[10] + " TVOC" ;
+        document.getElementById("UV").innerHTML = tableArray[11] + " UV" ;
+        document.getElementById("Accel X").innerHTML = tableArray[12] + " X" ;
+        document.getElementById("Accel Y").innerHTML = tableArray[13] + " Y" ;
+        document.getElementById("Accel Z").innerHTML = tableArray[14] + " Z" ;
+        document.getElementById("Magnetic x").innerHTML = tableArray[15] + " " ;
+        document.getElementById("Magnetic Y").innerHTML = tableArray[16] + " " ;
+        document.getElementById("Magnetic Z").innerHTML = tableArray[17] + " " ;
+        document.getElementById("Gyro x").innerHTML = tableArray[18] + " " ;
+        document.getElementById("Gyro Z").innerHTML = tableArray[19] + " " ;
+        document.getElementById("Gyro Y").innerHTML = tableArray[20] + " " ;
+        document.getElementById("Atlanta real-time").innerHTML = tableArray[21] + " " ;
+      }
+
+      function resetData() //invoking Data reset funtions return with strings
+      {
+        document.getElementById("Time elapsed").innerHTML =  " " ;
+        document.getElementById("Latitude").innerHTML = " " ;
+        document.getElementById("Longtitude").innerHTML = " " ;
+        document.getElementById("GPS Altitude").innerHTML = " " ;
+        document.getElementById("BMP Sensor Altitude").innerHTML = " " ;
+        document.getElementById("BMP Sensor Pressure").innerHTML = " " ;
+        document.getElementById("BMP Sensor Temperature").innerHTML = " " ;
+        document.getElementById("Digital Sensor Temperature").innerHTML = " " ;
+        document.getElementById("CSS Sensor Temperature").innerHTML = " " ;
+        document.getElementById("CSS Sensor eco2").innerHTML = " " ;
+        document.getElementById("CSS Sensor TVOC").innerHTML = " " ;
+        document.getElementById("UV").innerHTML = " " ;
+        document.getElementById("Accel X").innerHTML = " " ;
+        document.getElementById("Accel Y").innerHTML = " " ;
+        document.getElementById("Accel Z").innerHTML = " " ;
+        document.getElementById("Magnetic x").innerHTML = " " ;
+        document.getElementById("Magnetic Y").innerHTML = " " ;
+        document.getElementById("Magnetic Z").innerHTML = " " ;
+        document.getElementById("Gyro x").innerHTML = " " ;
+        document.getElementById("Gyro Z").innerHTML = " " ;
+        document.getElementById("Gyro Y").innerHTML = " " ;
+        document.getElementById("Atlanta real-time").innerHTML = " " ;
+      }
+      </script> 
+  </tr>
+</table>
+
+<p>
+<input type="button" value="Start" onclick="loadData();"> <!--adding a start button to populate data-->
+<input type="button" value="Reset" onclick="resetData()"> <!--adding a reset button for the populate data-->
+</p>
+
+<img src="kawx.png" alt="kawx" width="400" height="500">
+
+<footer><!--setting up footer which navigates to another page-->
+
+  <nav id="team2">
+    <a href="index.html">Home</a> |
+    <a href="Space Souds!.html">Space Sounds</a> |
+    <a href="UAT Space Program.html">UAT Space Program</a> |
+    <a href="Boards Objectives page.html">Boards Objective</a> |
+    <a href="Services.html">Services</a> |
+    <a href="https://amoheric.com">Blog</a>
+ </nav>
+
+</footer>
+
+</body>
+</html>
