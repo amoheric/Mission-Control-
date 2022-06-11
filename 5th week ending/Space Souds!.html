@@ -1,0 +1,139 @@
+<!--
+    ERIC AMOH ADJEI
+    END OF MID-TERM! Assigment.HTML
+    6/11/22
+-->
+
+<!DOCTYPE html> <!--always indicate document type to avoid errors-->
+<html lang="en"> <!--declaring the languge or country this HTML doc is written -->
+<head><!--adding inline CSS-->
+    
+<style>
+
+h1 
+{
+    font-family: 'Times New Roman', Times, serif; font-size: x-large; text-align: center; 
+} 
+
+body
+{
+    color: rgb(255, 255, 255);
+    background-image: url("moon.jpg"); background-repeat: round; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium; image-rendering:auto; text-align: center;  
+}   
+
+a {color:#00ffea; text-decoration: none;} /* (a) defining the link stlye for my page*/
+
+p
+{
+    color: rgb(255, 255, 255); text-decoration: wavy; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+/* adding stlye and even background to my table*/
+table {
+        border-radius: 10px;
+        font-family: arial, sans-serif;
+        width: auto;
+      }
+      
+      td, th {
+        border: 1px solid #000000;
+        text-align: left;
+        padding: 6px;
+      }
+
+      /*nth-chid adds a zigzag background to my table*/
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+
+</style>
+
+    <title>UAT Space Program - We Have SOUND!</title><!--DOCUMENT TITLE-->
+
+</head>
+
+<body>
+
+  <nav id="team2"><!--adding nav. to my to most page with id from external .css file-->
+    <a href="index.html">Home</a> |
+    <a href="Space Souds!.html">Space Sounds</a> |
+    <a href="UAT Space Program.html">UAT Space Program</a> |
+    <a href="Boards Objectives page.html">Boards Objective</a> |
+    <a href="Services.html">Services</a> |
+    <a href="https://amoheric.com">Blog</a> 
+ </nav>
+    
+    <h1 style="background-color: rgb(15, 42, 131);"> UAT Space Program - We Have SOUND!</h1> <!--style added to change H1 backgroung only-->
+    
+    
+    <img src="My project.png" alt="my-project"></br> <!--adding image-->
+    <p>
+    <progress>Loading</progress></p><!--just for design not meant to trigger-->
+    
+    
+    <audio src="fleetwood_mac_everywhere.mp3" id="myAudio"></audio><!--Added audio-->
+    
+    <p id="audioStatus">Click The Play Button</p><!--this will tell the status of my sound-->
+
+    <button onClick="playMyAudio()">start Audio</button><!--this is the play button-->
+    
+    <button onClick="pauseMyAudio()">stop Audio</button><!--the stop button-->
+
+
+    <script>
+        // inline javascript function
+      function playMyAudio()
+      {
+        document.getElementById("myAudio").play();//this function as the play button
+       document.getElementById("audioStatus").innerHTML="Audio is Playing";	 //this will tell the status of my sound
+       
+      }
+
+      function pauseMyAudio()//this function as the stop button
+      {
+        document.getElementById("myAudio").pause();
+       document.getElementById("audioStatus").innerHTML="Audio Paused"; //this will tell the status of my sound	
+      }
+    </script>
+
+
+    <script>
+     function playMyAudio()
+     {
+       document.getElementById("myAudio").play();// we expect our return with this code
+     }
+    </script>
+
+
+    <P>Implementing a sound to kill the space station Boredomness</P> <!--A paragraph of comment for UI-->
+
+
+    <h2 style= "color:rgba(255, 0, 200, 0.774) ;"> Why Is It Fleetwood Mac Everywhere?</h2> <!--style added to change H2 backgroung only-->
+
+    
+    <P>
+       In my last Mission Control assignment (Mission Control, We Have Blastoff!), 
+      I have to state <a href="Boards Objectives page.html">my course Objectives</a>
+    </P> <!--this is to show we can always add an external source to a webpage-->
+
+
+    <p>
+        <a href="Boards Objectives page.html"> <button>Click Me</button> <!--this button funtion navigates to any external sourc wanted-->
+    </p>
+    
+
+    <footer style="background-color: rgba(238, 234, 11, 0.582); border: inset; border-radius: 80px; border-color: rgb(0, 110, 255);"> <!--Adding footer as my last item to show on my webpage-->
+        I STAND WITH UKRAINE</footer>
+        </br> <!--setting up footer with border-->
+    
+
+    <script>
+        //Adding an alert of any kind of my choice
+        alert("Stop! Listen to some G.O.O.D Music!") 
+        // getting used to the comments
+    </script>
+
+</body>
+</html>
