@@ -1,0 +1,55 @@
+ERIC AMOH ADJEI
+END OF MID-TERM
+Assigment CSS,
+
+h1,h2,h3,h4
+{
+  color: rgb(5, 255, 234); font-family: 'Times New Roman', Times, serif; font-size: xx-large; text-align: center; text-align: center; text-decoration: rgb(199, 23, 176);
+} 
+
+
+a {color:#e9cc4e; text-decoration: none;}   
+
+body
+{
+  background-image: url("index.bg.jpg"); background-repeat: round;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: larger;
+  image-rendering: auto; text-align: center;  
+}
+
+p
+{
+color: rgb(255, 255, 255); text-decoration: wavy; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: larger; font-style: normal;
+}
+
+#team
+{
+  color: rgb(189, 18, 123); background-color: rgb(0, 0, 0); text-decoration-color: rgb(221, 137, 137); text-decoration: wavy; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  font-size: large; font-style: italic;
+}
+
+#team2
+{
+   background-color: rgba(255, 255, 255, 0.486); text-decoration: wavy; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  font-size: larger; font-style: italic;
+}
+
+table {
+  border-radius: 10px;
+  font-family: arial, sans-serif;
+  width: 100%; align-self: auto;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 6px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
